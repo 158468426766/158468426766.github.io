@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>单人贪吃蛇游戏</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>单人贪吃蛇游戏</h1>
+        <div class="game-info">
+            <div class="score">分数: <span id="score">0</span></div>
+            <div class="high-score">最高分: <span id="high-score">0</span></div>
+            <div class="level">等级: <span id="level">1</span></div>
+        </div>
+        <canvas id="gameCanvas" width="400" height="400"></canvas>
+        <div class="game-controls">
+            <button id="startBtn">开始游戏</button>
+        </div>
+        <div class="keyboard-controls">
+            <p><span class="key-hint">W</span> <span class="key-hint">A</span> <span class="key-hint">S</span> <span class="key-hint">D</span> 控制方向 | <span class="key-hint">P</span> 暂停/继续 | <span class="key-hint">O</span> 重置游戏</p>
+        </div>
+        <div id="startScreen" class="start-screen">
+            <h2>贪吃蛇游戏</h2>
+            <p>准备好了吗？</p>
+            <button id="confirmStartBtn">开始游戏</button>
+        </div>
+        <div id="gameOver" class="game-over hidden">
+            <h2>游戏结束</h2>
+            <p>最终分数: <span id="finalScore">0</span></p>
+            <p id="scoreFeedback" class="score-feedback"></p>
+            <button id="restartBtn">重新开始</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

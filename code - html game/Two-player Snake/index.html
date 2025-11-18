@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>双人贪吃蛇</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>双人贪吃蛇</h1>
+        
+        <div class="game-info">
+            <div class="player-score">
+                <h3>玩家1分数: <span id="player1Score">0</span></h3>
+                <h3>玩家2分数: <span id="player2Score">0</span></h3>
+            </div>
+            <div class="controls-info">
+                <p><strong>玩家1控制:</strong> W(上) A(左) S(下) D(右)</p>
+                <p><strong>玩家2控制:</strong> ↑(上) ←(左) ↓(下) →(右)</p>
+                <p><strong>通用控制:</strong> P(暂停/继续) O(重置游戏)</p>
+            </div>
+        </div>
+        
+        <canvas id="gameCanvas" width="600" height="400"></canvas>
+        
+        <div id="startScreen" class="screen">
+            <h2>准备开始游戏</h2>
+            <p>玩家1使用WASD控制，玩家2使用方向键控制</p>
+            <p>按空格键或点击按钮开始游戏</p>
+            <button id="confirmStartBtn">开始游戏</button>
+        </div>
+        
+        <div id="gameOverScreen" class="screen hidden">
+            <h2>游戏结束</h2>
+            <p>玩家1分数: <span id="player1FinalScore">0</span></p>
+            <p>玩家2分数: <span id="player2FinalScore">0</span></p>
+            <p id="winnerText"></p>
+            <button id="restartBtn">重新开始</button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

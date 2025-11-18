@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>扫雷游戏</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>扫雷游戏</h1>
+        
+        <div class="game-info">
+            <div class="timer">
+                <span class="label">时间:</span>
+                <span class="value">0</span>
+            </div>
+        </div>
+        
+        <div class="difficulty-selector">
+            <button id="restart-btn" class="hidden">重新开始</button>
+        </div>
+        
+        <div class="game-container">
+            <div id="game-board" class="game-board">
+                <!-- 游戏格子将通过JavaScript动态生成 -->
+            </div>
+        </div>
+        
+        <div id="game-message" class="game-message hidden">
+            <div class="message-content">
+                <h2 id="message-text">游戏结束!</h2>
+                <button id="play-again">再玩一次</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
